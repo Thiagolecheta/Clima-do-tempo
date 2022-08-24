@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <title>Clima</title>
+</head>
+<body>
+    <div class="container">
+        <div class="leftArea">
+            <form class="search">
+                <input type="search" id="searchInput" placeholder="Pesquise sua cidade"/>
+                <button>Buscar</button>
+            </form>
+           <div></div>
+            <div class="date"> </div>
+        </div>
+        <div class="rigthArea">
+            <div class="titleArea">
+                <h1>Clima do Tempo</h1>
+                <div class="areaToogle">
+                    <input type="checkbox" class="checkbox" id="check">
+                    <label class="label" for="check">
+                        <i class="fas fa-moon"></i>
+                        <i class="fas fa-sun"></i>
+                        <div class="ball"></div>
+                    </label>
+                </div>
+                
+            </div>
+            <div class="title"></div>
+            <div class="result">
+                <div class="climateArea">
+                    <div class="temp">
+                        <div class="tempTitle">Temperatura</div>
+                        <div class="city">
+                            <img src="http://openweathermap.org/img/wn/10d@2x.png" />
+                        <div class="tempInfo">-- <sup>ºC</sup></div>
+                        </div>
+                        <div class="climate"></div>
+                    </div>
+                </div>
+                
+                <h2>Todas informações</h2>
+                <div class="infGeneral">
+                    <div class="card">
+                        <div class="cartTitle">Vento</div>
+                        <div class="windInfo">-- <span>km/h</span></div>
+                        <div class="windImg">
+                            <img src="/icones/wind.png" alt="">
+                        </div>
+                    </div> 
+                    <div class="card">
+                        <div class="cartTitle">Umidade</div>
+                        <div class="humidity">--></div>
+                        <div class="windImg">
+                            <img src="/icones/water-stream.png" alt="">
+                        </div>
+                    </div> 
+                    <div class="card">
+                        <div class="cartTitle">Temperatura Máxima</div>
+                        <div class="tempMax">--></div>
+                        <div class="windImg">
+                            <img src="/icones/tempMax.png" alt="">
+                        </div>
+                    </div> 
+                    <div class="card">
+                        <div class="cartTitle">Temperatura Minima</div>
+                        <div class="tempMin">--></div>
+                        <div class="windImg">
+                            <img src="/icones/tempMin.png" alt="">
+                        </div>
+                    </div> 
+                </div>
+            </div>
+            <div class="hourDay"></div>
+            <div class="warning"></div>
+            
+        </div>
+    </div>
+
+        <footer>&copy Desenvolvido por Thiago Lecheta</footer>
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/19325bb10d.js" crossorigin="anonymous"></script>
+
+</body>
+</html>

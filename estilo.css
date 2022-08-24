@@ -1,0 +1,282 @@
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;;
+}
+
+body {
+    color: #fff;
+    background-color: #0b0916;
+}
+
+body.light {
+    background-color: white;
+
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px auto;
+    background-color: #1e213a;
+    max-width: 1200px;
+    height: 100%;
+}
+
+.leftArea {
+    background-color: #1e213a;
+    width: 500px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+.rigthArea{
+    background-color: #100e1d;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    border: 2px solid #1e213a;
+}
+
+.rigthArea.light{
+    background-color: #FFF;
+    color: #100e1d;
+    border: 2px solid #100e1d;
+}
+
+.tempInfo {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+
+.tempInfo sup {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.windInfo span{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.windInfo,
+.tempMax,
+.humidity,
+.tempMin {
+    color: #FFF;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.search input { 
+    width: 200px;
+    height: 40px;
+    flex: 1;
+    border: 2px solid #3a3d52;
+    background-color: transparent;
+    color: white;
+    padding: 20px;
+    margin-right: 10px;
+    transition: 3s;
+
+}
+
+input:hover {
+    outline: none !important;
+    border:1px solid #3c47e9;
+}
+
+input:focus {
+    outline: none !important;
+    border:1px solid #3c47e9;
+  }
+
+.search button {
+    background-color: #3c47e9;
+    color: white;
+    width: 100px;
+    height: 42px;
+    cursor: pointer;
+    transition: 2s;
+    border: 2px solid #3c47e9;
+}
+
+button:hover {
+    background-color: transparent;
+    border: 2px solid #3c47e9;
+    border-radius: 5px;
+    color: #3c47e9;
+}
+
+h1{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.titleArea{
+    display: flex;    
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+}
+
+
+.checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+.label {
+    background-color: #145cb4;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    position: relative;
+    height: 26px;
+    width: 50px;
+}
+
+.label .ball {
+    background-color: #0b0916;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 22px;
+    width: 22px;
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball{
+    transform: translateX(24px);
+}
+.fa-moon, .fa-sun {
+    color: yellow;
+}
+h2{
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.result {
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: 500;
+    margin-top: 30px;
+}
+.climateArea,
+.infGeneral,
+.footer {
+    flex: 2;
+    flex-grow: 2;
+    padding: 20px;
+
+}
+
+.infGeneral {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    background-color: #1e213a;
+    width: 300px;
+    height: 200px;
+    padding: 20px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 3s;
+}
+
+
+.card:hover{
+    border: 2px solid #3c47e9;
+    background-color: transparent;
+}
+
+
+
+.cartTitle,
+.tempTitle,
+.clouds {
+    font-size: 16px;
+    color: #848591;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+footer {
+    margin-top: -10px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.city {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.windImg img{
+    margin-top: 10px;
+    width: 40px;
+    height: 40px;
+}
+
+.date {
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+
+.hourDay{
+    padding-bottom: 10px;
+}
+
+
+@media (max-width: 1250px) {
+
+    .container {
+        flex-direction: column;
+    }
+
+    .areaLeft {
+        background-color: #1e213a;
+        width: 100%;
+        padding: 20px;
+    }
+}
